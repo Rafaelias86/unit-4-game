@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+  }
+
 body {
     background: url("../images/White_Crystals_dn.jpg");
 }
@@ -21,7 +25,8 @@ h1{
     padding: 5px;
     border-top-color: 15px;
 }
-#result{
+.result{
+    text-align: center;
     font-weight: bolder;
     color: rgb(1, 1, 15);
     width: 300px;
@@ -67,8 +72,12 @@ h1{
     background-color: rgb(60, 117, 192);
     font-size: 33px;
 } 
-}
+
 img{
     width:100px;
-
+}
+@media screen and (max-width:620px) {
+    .score, .crystal, .crystals, .counters, .container, .instructions, h1, .result {
+      width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
 }

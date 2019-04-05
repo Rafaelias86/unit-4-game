@@ -16,7 +16,7 @@ var resetGame = function () {
 
      console.log(randomNumber);
 
-     $("#result").html('Random Number: '+ randomNumber);
+     $(".result").html('Random Number: '+ randomNumber);
 
      for (var i =0; i < 4; i++ ){
 
