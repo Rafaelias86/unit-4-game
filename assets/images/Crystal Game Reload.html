@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)file:///C:/Users/jrfig/Desktop/Bootcamp_2019/unit-4-game/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./Crystal Game Reload_files/jquery.min.js.download"></script>
+    <link rel="stylesheet" href="./Crystal Game Reload_files/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Crystal Game Reload_files/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="./Crystal Game Reload_files/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="file:///C:/Users/jrfig/Desktop/Bootcamp_2019/unit-4-game/assets/css/style.css">
+    <title>Crystal Game Reload</title>
+
+
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 ">
+          <div class="card bg-basic text-center main-head">
+              <h1><i class="fas fa-gem"></i> Crystal Collector <i class="fas fa-gem"></i></h1>
+          </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 pt-2">
+            <div class="card pull left p-2 instructions">
+
+              <p> - You will be given a random number at the start of the game.</p>
+      
+              <p> - There are four crystals below.By clicking on a crystal you will add a specific amount of points to your total score.</p>
+              
+              <p> - You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+              
+              <p> - The value of each crystal is hidden from you until you click on it.</p>
+
+              <p> - Each time when the game starts, the game will change the values of each crystal.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-4 mb-2 p-2">
+        <div class="card">
+          <div class="card-header bg-light text-center text-dark font-weight-bold">
+            <h4>Random Number</h4> 
+          </div>
+          <div class="card-body bg-warning p-2 text-center" id="result"><h1 class="h1 p-2">73</h1></div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4  p-2">
+        <div class="card border border-info rounded">
+            <div class="card-header bg-light text-center text-dark font-weight-bold">
+                <h4>Wins &amp; Losses</h4>
+            </div>
+            <div class="card-body bg-warning text-dark p-2" id="win-lose">
+                <h5 class="pt-1 font-weight-bold"><span id="win">Wins: 0</span></h5> 
+                <h5 class="pb-1 font-weight-bold"><span id="lose">Losses: 0</span></h5>
+            </div>
+        </div>
+    </div>
+
+      <div class="col-12 col-md-4 mb-2 p-2">
+        <div class="card">
+          <div class="card-header bg-light text-center text-dark font-weight-bold">
+             <h4>Your Score</h4>  
+          </div>
+          <div class="card-body bg-warning p-2 text-center" id="counter"><h1 class="h1 p-1">0</h1></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-12 crystals"><div class="crystal" data-random="11" style="background-image: url(&quot;assets/images/crystal1.jpg&quot;); background-size: cover;"></div><div class="crystal" data-random="1" style="background-image: url(&quot;assets/images/crystal2.jpg&quot;); background-size: cover;"></div><div class="crystal" data-random="10" style="background-image: url(&quot;assets/images/crystal3.jpg&quot;); background-size: cover;"></div><div class="crystal" data-random="3" style="background-image: url(&quot;assets/images/crystal4.png&quot;); background-size: cover;"></div></div>
+    </div> 
+
+
+  </div>
+<script type="text/javascript" src="file:///C:/Users/jrfig/Desktop/Bootcamp_2019/unit-4-game/assets/javascript/game.js"></script>
+
+
+</body></html>
