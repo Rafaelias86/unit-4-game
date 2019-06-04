@@ -3,66 +3,75 @@
   }
 
 body {
-    background: url("../images/White_Crystals_dn.jpg");
+    background: url("../images/bg-1.jpg");
 }
 .container{
     padding: 10px;
+    font-family: 'Bowlby One SC', cursive;
 }
 .instructions{
     font-weight: bolder;
-    font-size: 15px;
-    width: 850px;
-    background-color: bisque;
+    font-size: 16px;
+    background-color: rgb(247, 244, 240);
     color: rgba(10, 104, 133, 0.897);
     padding: 5px;
     margin-bottom: 10px;
+    font-family: 'Bowlby One SC', cursive;
 }
-h1{
+#result, #counter, #win-lose {
+    
+    width: 100%;
+    height: 80px;
+}
+#wins, #losses {
+    
+    font-size-adjust: 15px;
+}
+h4{
+    color: rgb(247, 120, 36);
+}
+.main-head{
+    color: rgb(247, 120, 36);
+    font-family: 'Bowlby One SC', cursive;
+    background-color: rgb(247, 244, 240);
+}
+/* h1 {
     font-size: 45px;
     background-color: orange;
     color: white;
     width: 850px;
     padding: 5px;
     border-top-color: 15px;
-}
-.result{
+} */
+/* #result{
     text-align: center;
     font-weight: bolder;
     color: rgb(1, 1, 15);
-    width: 300px;
-    height: 100px;
     background-color: blueviolet;
     font-size: 33px;
     float: left;
     margin-right: 15px;
-}
-.counters{
-    text-align: justify;
-    padding: 5px;
-    color: rgb(1, 1, 15);
-    font-weight: bolder;
-    font-size: 20px;
-    background-color: greenyellow;
-    width: 175px;
-    height: 100px;
-    float: left;
+} */
+/* .counters{
     
-}
-.crystals{
+    
+} */
+ .crystals{
     width: 850px;
     clear: both;
     display: flex;
     justify-content: space-around;
     align-items:center;
     margin-bottom: 10px;
+    font-family: 'Bowlby One SC', cursive;
 }
 
 .crystal{
-    border: 1px solid red;
-    height:100px;
-    width:100px;
+    border: 3px solid red;
+    height:160px;
+    width:165px;
 }
-.score{
+/* .score{
     color: rgb(1, 1, 15);
     text-align: center;
     font-weight: bolder;
@@ -71,13 +80,13 @@ h1{
     height: 100px;
     background-color: rgb(60, 117, 192);
     font-size: 33px;
-} 
+}  */ 
 
-img{
+/* img{
     width:100px;
-}
-@media screen and (max-width:620px) {
+} */
+/* @media screen and (max-width:620px) {
     .score, .crystal, .crystals, .counters, .container, .instructions, h1, .result {
-      width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+      width:100%; 
     }
-}
+} 

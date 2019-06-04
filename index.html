@@ -3,7 +3,11 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" 
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Crystal Game Reload</title>
 
@@ -13,47 +17,70 @@
 <body>
 
   <div class= "container">
-
-    <div>
-      <h1>Crystal Collector! SAGA </h1>
-    </div>
-  
-    <div class= "instructions">
-      
-      <p>You will be given a random number at the start of the game.</p>
-      
-      <p>There are four crystals below.By clicking on a crystal you will add a specific amount of points to your total score.</p>
-      
-      <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
-      
-      <p>The value of each crystal is hidden from you until you click on it.</p>
-
-      <p>Each time when the game starts, the game will change the values of each crystal.</p>
-    
-    </div>
-
-    <div class= main>
-        
-        <p class = "result"></p>
-        
-      <div class= "counters">
-        <p id ="win"></p>
-        
-        <p id ="lose"></p>
+    <div class="row">
+      <div class = "col-md-12 ">
+          <div class="card bg-basic text-center main-head">
+              <h1><i class="fas fa-gem"></i> Crystal Collector <i class="fas fa-gem"></i></h1>
+          </div>
       </div>
     </div>
 
-    <div class="crystals">
+    <div class= "row">
+        <div class = "col-md-12 pt-2">
+            <div class="card pull left p-2 instructions">
 
+              <p> - You will be given a random number at the start of the game.</p>
+      
+              <p> - There are four crystals below.By clicking on a crystal you will add a specific amount of points to your total score.</p>
+              
+              <p> - You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+              
+              <p> - The value of each crystal is hidden from you until you click on it.</p>
+
+              <p> - Each time when the game starts, the game will change the values of each crystal.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class = "row">
+      <div class = "col-12 col-md-4 mb-2 p-2">
+        <div class = "card">
+          <div class = "card-header bg-light text-center text-dark font-weight-bold">
+            <h4>Random Number</h4> 
+          </div>
+          <div class="card-body bg-warning p-2 text-center" id="result"></div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4  p-2">
+        <div class="card border border-info rounded" >
+            <div class="card-header bg-light text-center text-dark font-weight-bold">
+                <h4>Wins & Losses</h4>
+            </div>
+            <div class="card-body bg-warning text-dark p-2" id="win-lose" >
+                <h5 class="pt-1 font-weight-bold" ><span id="win">Wins: </span></h5> 
+                <h5 class="pb-1 font-weight-bold" ><span id="lose">Losses: </span></h5>
+            </div>
+        </div>
+    </div>
+
+      <div class = "col-12 col-md-4 mb-2 p-2">
+        <div class = "card">
+          <div class = "card-header bg-light text-center text-dark font-weight-bold">
+             <h4>Your Score</h4>  
+          </div>
+          <div class="card-body bg-warning p-2 text-center" id="counter"></div>
+        </div>
+      </div>
     </div>
     
-    <div class= "score">
-        <p id="counter"></p>
-    </div>
+    <div class = "row">
+      <div class="col-12 crystals"></div>
+    </div> 
 
-</div>
-  
 
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+  </div>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>

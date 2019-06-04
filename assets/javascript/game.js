@@ -10,13 +10,13 @@ var resetGame = function () {
 
      $(".crystals").empty();
 
-     var images = ["assets/images/crystal1.jpg","assets/images/crystal2.jpg","assets/images/crystal3.jpg","assets/images/crystal4.jpg"];
+     var images = ["assets/images/crystal1.jpg","assets/images/crystal2.jpg","assets/images/crystal3.jpg","assets/images/crystal4.png"];
      
      randomNumber = Math.floor(Math.random() * 102 + 19);
 
      console.log(randomNumber);
 
-     $(".result").html('Random Number: '+ randomNumber);
+     $("#result").html('<h1 class="h1 p-2">' + randomNumber + '</h1>');
 
      for (var i =0; i < 4; i++ ){
 
@@ -39,7 +39,7 @@ var resetGame = function () {
 
 
      }
-     $("#counter").html('Your total score is: '  + counter);
+     $("#counter").html('<h1 class="h1 p-1">' + counter + '</h1>');
 }
 
 resetGame();
@@ -51,7 +51,7 @@ $(document).on('click', ".crystal", function(){
 
      counter += num;
 
-     $("#counter").html('Your total score is: ' + counter);
+     $("#counter").html('<h1 class="h1 p-1">' + counter + '</h1>');
 
      console.log(counter);
 
